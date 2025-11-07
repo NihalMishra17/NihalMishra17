@@ -23,10 +23,10 @@ I'm a **Master's student in Computer Science** at the University of Illinois, Ch
 
 ### 🔍 [Incremental RAG Indexer with Spark & Delta Lake](https://github.com/NihalMishra17/Incremental-RAG-Indexer-with-Spark-Delta-Detection)
 **Intelligent delta detection system with ACID transactions**
-- ⚡ Reduced reprocessing by **100%** for unchanged documents via content-hash comparison
-- 🎯 Processed **608 research papers (3GB)** generating **64,157 embeddings** across 4-node EMR cluster
-- 💰 Achieved **92% time reduction** (58hrs → 4.5hrs) with **$0.014/document** cost efficiency
-- 🔒 Built with ACID transactions, time-travel capabilities, and idempotent operations
+- 🔄 Implements **intelligent change detection** using MD5 content hashing, processing only modified documents for 100% efficiency on unchanged data
+- 🔒 Built with **Delta Lake's ACID transactions** and time-travel capabilities, ensuring zero data duplication through versioned storage and idempotent operations
+- ⚡ Deployed on **AWS EMR with YARN orchestration**, implementing functional programming patterns for distributed processing across 4-node cluster
+- 💾 Generated **64,157 deterministic embeddings** with stable chunk IDs, achieving 92% time reduction while maintaining $0.014/document cost
 - 🛠️ **Tech Stack**: Scala, Apache Spark, Delta Lake, AWS EMR, Ollama, YARN
 
 ### 📊 [Real-Time Distributed Log Analyzer](https://github.com/NihalMishra17/distributed-log-analyzer)
@@ -39,10 +39,10 @@ I'm a **Master's student in Computer Science** at the University of Illinois, Ch
 
 ### 🔎 [RAG Index Builder with MapReduce](https://github.com/nmish-uic/RAG)
 **Distributed semantic search using Hadoop MapReduce on AWS EMR**
-- ⚡ Reduced processing time by **92%** (58hrs → 4.5hrs) for 608 research papers
-- 🎯 Achieved **3-5s query latency** with sharded Lucene HNSW indexes
-- 💰 Minimized costs to **$0.014/document** through optimized batch processing
-- 🔧 Generated **64,157 embeddings** with comprehensive ScalaTest suite validation
+- 🗂️ Built **sharded Lucene HNSW indexes** across multiple reducers, enabling parallel vector search with 3-5s query latency for 608 research papers
+- 📊 Designed **custom MapReduce pipeline** with mapper-side PDF extraction and batch embedding generation (16-32 items/batch) for optimal API efficiency
+- 🔍 Implemented **semantic search** with 1024-dimensional vectors, processing 3GB corpus through distributed chunking and embedding workflow
+- ✅ Validated with **comprehensive ScalaTest suite**, ensuring deterministic chunk generation and reliable distributed processing
 - 🛠️ **Tech Stack**: Scala, Apache Hadoop, Lucene, AWS EMR, Ollama, PDFBox
 
 ### 🛡️ [Real-Time Cyberbullying Detection Platform](https://github.com/NihalMishra17/cyberbullying)
@@ -116,13 +116,6 @@ I'm a **Master's student in Computer Science** at the University of Illinois, Ch
 **B.E. in Computer Engineering** (with honors in AIML) | University of Mumbai | *July 2024*
 - CGPA: 8.93/10 (3.57/4.0 GPA)
 
-### 🌟 Leadership & Community Service
-
-**Board of Director** | Rotaract Club of Ambernath Smartcity | *2023-2024*
-- Organized monthly sports tournaments for **120+ participants**
-
-**General Body Member** | Rotaract Club of Ambernath North | *2021-2022*
-- Led donation drives supporting **50+ families**
 
 ## 📈 What I'm Working On
 
@@ -145,11 +138,3 @@ I'm always open to interesting conversations and collaboration opportunities. Fe
 - 📍 **Location**: Chicago, Illinois, USA
 
 ---
-
-<div align="center">
-
-### 💡 "Building scalable systems that make a difference, one commit at a time."
-
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=NihalMishra17.NihalMishra17)
-
-</div>
